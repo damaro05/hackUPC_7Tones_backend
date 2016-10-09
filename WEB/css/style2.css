@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,500);
+
+#header {
+    width:100%;
+    background-color:#0277bd;
+    height:35px;
+    padding-top:15px;
+}
+
+#header .signout a {
+	float: right;
+	color: #ffffff;
+	text-align: right;
+	padding-right: 15px;
+	text-decoration: none;
+	margin-top: -19px;
+}
+
+#header .signout a:hover {
+	font-weight: 500;
+}
+
+#header .logo {
+	padding-left: 15px;
+    color: #ffffff;
+}
+
+#card {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 30px auto 60px;
+  padding: 10px 40px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#card button {
+  background: #607D8B;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  margin: 5px 0px 10px 0px;
+}
+
+.title {
+	text-align: left;
+}
+
+.area {
+	float: left;
+	font-weight: 500;
+}
+
+.description {
+	clear:both;
+	display: block;
+	text-align: left;
+	text-align: justify;
+}
+
+.text {
+	text-align: right;
+}
+
+.img {
+	width: 100%;
+	padding-bottom: 22px;
+}
+
+.welcome {
+	width: 100%;
+	text-align: center;
+	margin-top: -20px;	
+	margin-top: -19px;
+    color: #ffffff;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}

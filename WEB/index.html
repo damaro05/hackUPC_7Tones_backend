@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>7tones - Inici de sessió per a associacions</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="login-page">
+			<div class="form">
+			    <form class="register" id="register" style = "display:none;">
+					<input type="text" placeholder="Nom"/>
+					<input type="text" placeholder="NIF/CIF"/>
+					<input type="text" placeholder="Correu electrònic"/>
+					<input type="password" placeholder="Contrasenya"/>
+					<button>Registrar-se</button>
+					<p class="message" >Ja estàs registrat? <a href="#register" onclick="toggle_visibility('login', 'register');">Inicia sessió</a></p>
+				</form>
+				<form class="login" id="login" style = "display: block;" action="../API/loginweb.php"  method="post">
+					<input type="text" placeholder="Correu electrònic" name="name"/>
+					<input type="password" placeholder="Contrasenya" name="pass"/>
+					<button >Iniciar sessió</button>
+					<p class="message">No estàs registrat? <a href="#login" onclick="toggle_visibility('register', 'login');">Crea un nou compte.</a></p>
+				</form>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		function toggle_visibility(show, hide) {
+			var s = document.getElementById(show);
+			var h = document.getElementById(hide);
+			h.style.display = 'none';
+			s.style.display = 'block';
+		}
+	</script>
+
+</html>
